@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v3
@@ -19,5 +19,5 @@ jobs:
           java-version: '19'
           distribution: 'temurin'
           cache: maven
-      - name: Run Automation with Java
+      - name: Run api Automation with Java
         run: mvn clean verify
